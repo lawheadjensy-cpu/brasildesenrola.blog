@@ -2,11 +2,10 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Oferta Especial</title>
 
-<title>Privacidade e Cookies</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
@@ -14,313 +13,241 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
-font-family:'Outfit',sans-serif;
+font-family:'Poppins',sans-serif;
+-webkit-tap-highlight-color:transparent;
 }
 
 body{
-padding:14px;
-background:
-linear-gradient(160deg,#0f172a,#312e81,#7c3aed);
+background:linear-gradient(180deg,#4f46e5,#2563eb,#7c3aed);
+padding:12px;
 min-height:100vh;
 }
 
-/* BOX */
-
-.cookie-box{
+.container{
 width:100%;
-max-width:360px;
+max-width:430px;
 margin:auto;
-
-background:rgba(255,255,255,.10);
-
-backdrop-filter:blur(14px);
-
-border:1px solid rgba(255,255,255,.15);
-
-border-radius:26px;
-
-overflow:hidden;
-
-box-shadow:
-0 15px 40px rgba(0,0,0,.25);
 }
 
-/* HEADER */
-
-.header{
-
-padding:18px;
-
-display:flex;
-
-align-items:center;
-
-gap:12px;
-
-background:
-linear-gradient(135deg,
-rgba(255,255,255,.15),
-rgba(255,255,255,.03));
-}
-
-.icon{
-
-width:45px;
-height:45px;
-
-border-radius:14px;
-
-display:flex;
-justify-content:center;
-align-items:center;
-
-background:linear-gradient(135deg,#7c3aed,#2563eb);
-
-font-size:20px;
-}
-
-.header h1{
+.alert{
+background:#ff0000;
 color:#fff;
-font-size:16px;
-}
-
-.header p{
-font-size:11px;
-color:#cbd5e1;
-margin-top:2px;
-}
-
-/* CONTENT */
-
-.content{
-padding:14px;
-}
-
-/* BOTÕES */
-
-.buttons{
-
-display:flex;
-
-flex-direction:column;
-
-gap:8px;
-
-margin-bottom:14px;
-}
-
-.btn{
-
-padding:14px;
-
-border:none;
-
-border-radius:14px;
-
-font-size:12px;
-
-font-weight:700;
-
-cursor:pointer;
-}
-
-.accept{
-
-background:
-linear-gradient(90deg,#7c3aed,#2563eb);
-
-color:#fff;
-}
-
-.reject{
-
-background:rgba(255,255,255,.12);
-
-color:#fff;
-}
-
-.custom{
-
-background:transparent;
-
-border:1px solid rgba(255,255,255,.3);
-
-color:#fff;
-}
-
-/* TEXTO */
-
-.text{
-
-font-size:11px;
-
-line-height:1.6;
-
+font-weight:800;
+font-size:13px;
+padding:12px;
 text-align:center;
-
-color:#e2e8f0;
-
-margin-bottom:12px;
+border-radius:50px;
+margin-top:8px;
+margin-bottom:15px;
+animation:pulse 1s infinite;
 }
 
-/* CARDS */
-
-.cards{
-
-display:flex;
-
-flex-direction:column;
-
-gap:8px;
-
-margin-bottom:14px;
+@keyframes pulse{
+50%{
+transform:scale(1.02);
+}
 }
 
 .card{
-
-padding:12px;
-
-border-radius:14px;
-
-background:rgba(255,255,255,.08);
-
-border:1px solid rgba(255,255,255,.10);
-}
-
-.card h3{
-
-font-size:11px;
-
-color:#fff;
-
-margin-bottom:4px;
-}
-
-.card p{
-
-font-size:9px;
-
-color:#cbd5e1;
-}
-
-/* FOOTER */
-
-.footer{
-
+background:#fff;
+padding:22px;
+border-radius:30px;
 text-align:center;
-
-font-size:9px;
-
-color:#cbd5e1;
+box-shadow:0 10px 40px rgba(0,0,0,.25);
 }
 
-.footer a{
+h1{
+font-size:28px;
+line-height:33px;
+color:#111;
+font-weight:800;
+margin-bottom:10px;
+}
 
-color:#93c5fd;
+.sub{
+font-size:14px;
+color:#666;
+margin-bottom:15px;
+}
 
+.old{
+color:#999;
+font-size:18px;
+text-decoration:line-through;
+}
+
+.price{
+font-size:50px;
+font-weight:800;
+color:#16a34a;
+margin-top:5px;
+}
+
+.timer-box{
+margin-top:18px;
+background:#fff3f3;
+padding:15px;
+border-radius:18px;
+}
+
+.timer-title{
+color:red;
+font-size:15px;
+font-weight:700;
+}
+
+#timer{
+font-size:38px;
+font-weight:800;
+color:red;
+margin-top:5px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+margin-top:20px;
+}
+
+.item{
+background:#f4f4f4;
+padding:14px;
+border-radius:15px;
+font-size:13px;
+font-weight:600;
+}
+
+.btn{
+display:block;
+width:100%;
+padding:18px;
+margin-top:25px;
+border-radius:50px;
+background:linear-gradient(to right,#16a34a,#22c55e);
+color:#fff;
 text-decoration:none;
+font-size:18px;
+font-weight:800;
+box-shadow:0 8px 25px rgba(34,197,94,.4);
+}
+
+.btn:active{
+transform:scale(.98);
+}
+
+.no{
+display:block;
+margin-top:15px;
+font-size:13px;
+text-decoration:none;
+color:#777;
+}
+
+.secure{
+margin-top:18px;
+font-size:12px;
+color:#999;
 }
 
 </style>
 </head>
-
 <body>
 
-<div class="cookie-box">
+<div class="container">
 
-<div class="header">
-
-<div class="icon">🍪</div>
-
-<div>
-<h1>Privacidade e Cookies</h1>
-<p>Gerencie sua experiência online</p>
+<div class="alert">
+⚠ OFERTA DISPONÍVEL SOMENTE NESTA TELA
 </div>
-
-</div>
-
-
-<div class="content">
-
-<div class="buttons">
-
-<button class="btn accept"
-onclick="aceitar()">
-Aceitar e Continuar
-</button>
-
-<button class="btn reject"
-onclick="rejeitar()">
-Rejeitar
-</button>
-
-<button class="btn custom"
-onclick="personalizar()">
-Configurar
-</button>
-
-</div>
-
-
-<div class="text">
-
-Usamos cookies para melhorar sua navegação,
-otimizar desempenho e personalizar conteúdos.
-
-</div>
-
-
-<div class="cards">
 
 <div class="card">
 
-<h3>🔒 Cookies Essenciais</h3>
+<h1>ESPERE! SUA OFERTA FOI LIBERADA</h1>
 
-<p>Necessários para segurança e funcionamento.</p>
+<p class="sub">
+Adicione este benefício exclusivo antes de sair desta página.
+</p>
+
+<a href="https://fancy-desenrola.netlify.app/" class="btn">
+SIM, QUERO APROVEITAR
+</a>
+
+<div class="old">
+De R$317,90
+</div>
+
+<div class="price">
+R$98,52
+</div>
+
+<div class="timer-box">
+
+<div class="timer-title">
+Oferta expira em:
+</div>
+
+<div id="timer">
+05:00
+</div>
 
 </div>
 
+<div class="grid">
 
-<div class="card">
+<div class="item">
+✔ Liberação imediata
+</div>
 
-<h3>📊 Desempenho</h3>
+<div class="item">
+✔ Acesso rápido
+</div>
 
-<p>Melhora sua experiência e velocidade.</p>
+<div class="item">
+✔ Oferta exclusiva
+</div>
 
+<div class="item">
+✔ Garantia
 </div>
 
 </div>
 
+<a href="https://fancy-desenrola.netlify.app/" class="btn">
+SIM, QUERO APROVEITAR
+</a>
 
-<div class="footer">
+<a href="#" class="no">
+Não, desejo continuar
+</a>
 
-Veja nossa
-<a href="#">Política de Privacidade</a>
-
+<div class="secure">
+🔒 Navegação segura
 </div>
 
 </div>
-
 </div>
 
 <script>
 
-const LINK="https://rococo-fudge-6c9cdf.netlify.app/"
+let tempo=300;
 
-function aceitar(){
-localStorage.setItem("cookies","accepted")
-location.href=LINK
+setInterval(()=>{
+
+tempo--;
+
+let m=Math.floor(tempo/60);
+let s=tempo%60;
+
+document.getElementById("timer").innerHTML=
+(m<10?"0":"")+m+":"+(s<10?"0":"")+s;
+
+if(tempo<=0){
+
+window.location.href="https://fancy-desenrola.netlify.app/";
+
 }
 
-function rejeitar(){
-localStorage.setItem("cookies","rejected")
-location.href=LINK
-}
-
-function personalizar(){
-localStorage.setItem("cookies","custom")
-location.href=LINK
-}
+},1000);
 
 </script>
 
